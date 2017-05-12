@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39E309131EC55E2600D254B7 /* HYDownloadHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E3090E1EC55E2600D254B7 /* HYDownloadHUD.m */; };
+		39E309141EC55E2600D254B7 /* HYDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E309101EC55E2600D254B7 /* HYDownloadManager.m */; };
+		39E309151EC55E2600D254B7 /* HYSessionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E309121EC55E2600D254B7 /* HYSessionModel.m */; };
+		39E68FF61EC4643800F56F1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E68FF51EC4643800F56F1C /* main.m */; };
+		39E68FF91EC4643800F56F1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E68FF81EC4643800F56F1C /* AppDelegate.m */; };
+		39E68FFC1EC4643800F56F1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E68FFB1EC4643800F56F1C /* ViewController.m */; };
+		39E68FFF1EC4643800F56F1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39E68FFD1EC4643800F56F1C /* Main.storyboard */; };
+		39E690011EC4643800F56F1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39E690001EC4643800F56F1C /* Assets.xcassets */; };
+		39E690041EC4643800F56F1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39E690021EC4643800F56F1C /* LaunchScreen.storyboard */; };
+		39E6900F1EC4643800F56F1C /* HYNetworkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E6900E1EC4643800F56F1C /* HYNetworkingTests.m */; };
+		39E6901A1EC4643800F56F1C /* HYNetworkingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E690191EC4643800F56F1C /* HYNetworkingUITests.m */; };
+		39E690291EC4647500F56F1C /* HYDataTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E690281EC4647500F56F1C /* HYDataTask.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39E6900B1EC4643800F56F1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39E68FE91EC4643800F56F1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39E68FF01EC4643800F56F1C;
+			remoteInfo = HYNetworking;
+		};
+		39E690161EC4643800F56F1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39E68FE91EC4643800F56F1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39E68FF01EC4643800F56F1C;
+			remoteInfo = HYNetworking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		39E3090D1EC55E2600D254B7 /* HYDownloadHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYDownloadHUD.h; sourceTree = "<group>"; };
+		39E3090E1EC55E2600D254B7 /* HYDownloadHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYDownloadHUD.m; sourceTree = "<group>"; };
+		39E3090F1EC55E2600D254B7 /* HYDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYDownloadManager.h; sourceTree = "<group>"; };
+		39E309101EC55E2600D254B7 /* HYDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYDownloadManager.m; sourceTree = "<group>"; };
+		39E309111EC55E2600D254B7 /* HYSessionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSessionModel.h; sourceTree = "<group>"; };
+		39E309121EC55E2600D254B7 /* HYSessionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSessionModel.m; sourceTree = "<group>"; };
+		39E68FF11EC4643800F56F1C /* HYNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39E68FF51EC4643800F56F1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		39E68FF71EC4643800F56F1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		39E68FF81EC4643800F56F1C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		39E68FFA1EC4643800F56F1C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		39E68FFB1EC4643800F56F1C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		39E68FFE1EC4643800F56F1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39E690001EC4643800F56F1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39E690031EC4643800F56F1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		39E690051EC4643800F56F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39E6900A1EC4643800F56F1C /* HYNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HYNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39E6900E1EC4643800F56F1C /* HYNetworkingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYNetworkingTests.m; sourceTree = "<group>"; };
+		39E690101EC4643800F56F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39E690151EC4643800F56F1C /* HYNetworkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HYNetworkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39E690191EC4643800F56F1C /* HYNetworkingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYNetworkingUITests.m; sourceTree = "<group>"; };
+		39E6901B1EC4643800F56F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39E690271EC4647500F56F1C /* HYDataTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYDataTask.h; sourceTree = "<group>"; };
+		39E690281EC4647500F56F1C /* HYDataTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYDataTask.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39E68FEE1EC4643800F56F1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39E690071EC4643800F56F1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39E690121EC4643800F56F1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39E3090C1EC55E2600D254B7 /* 视频下载工具 */ = {
+			isa = PBXGroup;
+			children = (
+				39E3090D1EC55E2600D254B7 /* HYDownloadHUD.h */,
+				39E3090E1EC55E2600D254B7 /* HYDownloadHUD.m */,
+				39E3090F1EC55E2600D254B7 /* HYDownloadManager.h */,
+				39E309101EC55E2600D254B7 /* HYDownloadManager.m */,
+				39E309111EC55E2600D254B7 /* HYSessionModel.h */,
+				39E309121EC55E2600D254B7 /* HYSessionModel.m */,
+			);
+			path = "视频下载工具";
+			sourceTree = "<group>";
+		};
+		39E68FE81EC4643800F56F1C = {
+			isa = PBXGroup;
+			children = (
+				39E68FF31EC4643800F56F1C /* HYNetworking */,
+				39E6900D1EC4643800F56F1C /* HYNetworkingTests */,
+				39E690181EC4643800F56F1C /* HYNetworkingUITests */,
+				39E68FF21EC4643800F56F1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		39E68FF21EC4643800F56F1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39E68FF11EC4643800F56F1C /* HYNetworking.app */,
+				39E6900A1EC4643800F56F1C /* HYNetworkingTests.xctest */,
+				39E690151EC4643800F56F1C /* HYNetworkingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39E68FF31EC4643800F56F1C /* HYNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				39E3090C1EC55E2600D254B7 /* 视频下载工具 */,
+				39E68FF71EC4643800F56F1C /* AppDelegate.h */,
+				39E68FF81EC4643800F56F1C /* AppDelegate.m */,
+				39E690271EC4647500F56F1C /* HYDataTask.h */,
+				39E690281EC4647500F56F1C /* HYDataTask.m */,
+				39E68FFA1EC4643800F56F1C /* ViewController.h */,
+				39E68FFB1EC4643800F56F1C /* ViewController.m */,
+				39E68FFD1EC4643800F56F1C /* Main.storyboard */,
+				39E690001EC4643800F56F1C /* Assets.xcassets */,
+				39E690021EC4643800F56F1C /* LaunchScreen.storyboard */,
+				39E690051EC4643800F56F1C /* Info.plist */,
+				39E68FF41EC4643800F56F1C /* Supporting Files */,
+			);
+			path = HYNetworking;
+			sourceTree = "<group>";
+		};
+		39E68FF41EC4643800F56F1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				39E68FF51EC4643800F56F1C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		39E6900D1EC4643800F56F1C /* HYNetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				39E6900E1EC4643800F56F1C /* HYNetworkingTests.m */,
+				39E690101EC4643800F56F1C /* Info.plist */,
+			);
+			path = HYNetworkingTests;
+			sourceTree = "<group>";
+		};
+		39E690181EC4643800F56F1C /* HYNetworkingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				39E690191EC4643800F56F1C /* HYNetworkingUITests.m */,
+				39E6901B1EC4643800F56F1C /* Info.plist */,
+			);
+			path = HYNetworkingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39E68FF01EC4643800F56F1C /* HYNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39E6901E1EC4643800F56F1C /* Build configuration list for PBXNativeTarget "HYNetworking" */;
+			buildPhases = (
+				39E68FED1EC4643800F56F1C /* Sources */,
+				39E68FEE1EC4643800F56F1C /* Frameworks */,
+				39E68FEF1EC4643800F56F1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HYNetworking;
+			productName = HYNetworking;
+			productReference = 39E68FF11EC4643800F56F1C /* HYNetworking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		39E690091EC4643800F56F1C /* HYNetworkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39E690211EC4643800F56F1C /* Build configuration list for PBXNativeTarget "HYNetworkingTests" */;
+			buildPhases = (
+				39E690061EC4643800F56F1C /* Sources */,
+				39E690071EC4643800F56F1C /* Frameworks */,
+				39E690081EC4643800F56F1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39E6900C1EC4643800F56F1C /* PBXTargetDependency */,
+			);
+			name = HYNetworkingTests;
+			productName = HYNetworkingTests;
+			productReference = 39E6900A1EC4643800F56F1C /* HYNetworkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		39E690141EC4643800F56F1C /* HYNetworkingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39E690241EC4643800F56F1C /* Build configuration list for PBXNativeTarget "HYNetworkingUITests" */;
+			buildPhases = (
+				39E690111EC4643800F56F1C /* Sources */,
+				39E690121EC4643800F56F1C /* Frameworks */,
+				39E690131EC4643800F56F1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39E690171EC4643800F56F1C /* PBXTargetDependency */,
+			);
+			name = HYNetworkingUITests;
+			productName = HYNetworkingUITests;
+			productReference = 39E690151EC4643800F56F1C /* HYNetworkingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39E68FE91EC4643800F56F1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = net.fitcome.www;
+				TargetAttributes = {
+					39E68FF01EC4643800F56F1C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5C5VZ6884A;
+						ProvisioningStyle = Automatic;
+					};
+					39E690091EC4643800F56F1C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5C5VZ6884A;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 39E68FF01EC4643800F56F1C;
+					};
+					39E690141EC4643800F56F1C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5C5VZ6884A;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 39E68FF01EC4643800F56F1C;
+					};
+				};
+			};
+			buildConfigurationList = 39E68FEC1EC4643800F56F1C /* Build configuration list for PBXProject "HYNetworking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39E68FE81EC4643800F56F1C;
+			productRefGroup = 39E68FF21EC4643800F56F1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39E68FF01EC4643800F56F1C /* HYNetworking */,
+				39E690091EC4643800F56F1C /* HYNetworkingTests */,
+				39E690141EC4643800F56F1C /* HYNetworkingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39E68FEF1EC4643800F56F1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39E690041EC4643800F56F1C /* LaunchScreen.storyboard in Resources */,
+				39E690011EC4643800F56F1C /* Assets.xcassets in Resources */,
+				39E68FFF1EC4643800F56F1C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39E690081EC4643800F56F1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39E690131EC4643800F56F1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39E68FED1EC4643800F56F1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39E68FFC1EC4643800F56F1C /* ViewController.m in Sources */,
+				39E309131EC55E2600D254B7 /* HYDownloadHUD.m in Sources */,
+				39E690291EC4647500F56F1C /* HYDataTask.m in Sources */,
+				39E309151EC55E2600D254B7 /* HYSessionModel.m in Sources */,
+				39E68FF91EC4643800F56F1C /* AppDelegate.m in Sources */,
+				39E309141EC55E2600D254B7 /* HYDownloadManager.m in Sources */,
+				39E68FF61EC4643800F56F1C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39E690061EC4643800F56F1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39E6900F1EC4643800F56F1C /* HYNetworkingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39E690111EC4643800F56F1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39E6901A1EC4643800F56F1C /* HYNetworkingUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39E6900C1EC4643800F56F1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39E68FF01EC4643800F56F1C /* HYNetworking */;
+			targetProxy = 39E6900B1EC4643800F56F1C /* PBXContainerItemProxy */;
+		};
+		39E690171EC4643800F56F1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39E68FF01EC4643800F56F1C /* HYNetworking */;
+			targetProxy = 39E690161EC4643800F56F1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		39E68FFD1EC4643800F56F1C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39E68FFE1EC4643800F56F1C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		39E690021EC4643800F56F1C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39E690031EC4643800F56F1C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39E6901C1EC4643800F56F1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39E6901D1EC4643800F56F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39E6901F1EC4643800F56F1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5C5VZ6884A;
+				INFOPLIST_FILE = HYNetworking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fitcome.Hoo.HYNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		39E690201EC4643800F56F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5C5VZ6884A;
+				INFOPLIST_FILE = HYNetworking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fitcome.Hoo.HYNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		39E690221EC4643800F56F1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5C5VZ6884A;
+				INFOPLIST_FILE = HYNetworkingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fitcome.Hoo.HYNetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HYNetworking.app/HYNetworking";
+			};
+			name = Debug;
+		};
+		39E690231EC4643800F56F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5C5VZ6884A;
+				INFOPLIST_FILE = HYNetworkingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fitcome.Hoo.HYNetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HYNetworking.app/HYNetworking";
+			};
+			name = Release;
+		};
+		39E690251EC4643800F56F1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5C5VZ6884A;
+				INFOPLIST_FILE = HYNetworkingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fitcome.Hoo.HYNetworkingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HYNetworking;
+			};
+			name = Debug;
+		};
+		39E690261EC4643800F56F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5C5VZ6884A;
+				INFOPLIST_FILE = HYNetworkingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fitcome.Hoo.HYNetworkingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HYNetworking;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39E68FEC1EC4643800F56F1C /* Build configuration list for PBXProject "HYNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39E6901C1EC4643800F56F1C /* Debug */,
+				39E6901D1EC4643800F56F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39E6901E1EC4643800F56F1C /* Build configuration list for PBXNativeTarget "HYNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39E6901F1EC4643800F56F1C /* Debug */,
+				39E690201EC4643800F56F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39E690211EC4643800F56F1C /* Build configuration list for PBXNativeTarget "HYNetworkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39E690221EC4643800F56F1C /* Debug */,
+				39E690231EC4643800F56F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39E690241EC4643800F56F1C /* Build configuration list for PBXNativeTarget "HYNetworkingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39E690251EC4643800F56F1C /* Debug */,
+				39E690261EC4643800F56F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39E68FE91EC4643800F56F1C /* Project object */;
+}
