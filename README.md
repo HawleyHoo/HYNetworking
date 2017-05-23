@@ -1,3 +1,4 @@
 # HYNetworking
-封装NSURLSession的 get post请求工具类 
+封装NSURLSessionDataTask的 get post请求工具类
+
 封装NSURLSessionDataTask的一个下载工具HYDownloadManager，支持断点续传下载。
