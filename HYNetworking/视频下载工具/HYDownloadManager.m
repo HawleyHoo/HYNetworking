@@ -160,7 +160,7 @@ static HYDownloadManager *_downloadManager;
     
     HYSessionModel *sessionModel = [self getSessionModel:dataTask.taskIdentifier];
     
-    // 打开流
+    // 打开输出流
     [sessionModel.stream open];
     
     // 获得服务器这次请求 返回数据的总长度

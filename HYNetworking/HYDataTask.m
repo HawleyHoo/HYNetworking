@@ -14,7 +14,7 @@
                   params:(NSDictionary *)params
                  success:(void (^)(id json))success
                  failure:(void (^)(NSError *error))failure {
-    NSLog(@"get  currentThread %@", [NSThread currentThread]);
+//    NSLog(@"get  currentThread %@", [NSThread currentThread]);
 //    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
     
     NSURL *URL = [NSURL URLWithString:urlstr];
@@ -25,11 +25,11 @@
         // 4.根据会话对象，创建一个Task任务：
         NSURLSessionDataTask *sessionDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
             
-            NSLog(@"session currentThread %@", [NSThread currentThread]);
+//            NSLog(@"session currentThread %@", [NSThread currentThread]);
 //            dispatch_semaphore_signal(semaphore);
             
             dispatch_async(dispatch_get_main_queue(), ^{
-                NSLog(@"block currentThread %@", [NSThread currentThread]);
+//                NSLog(@"block currentThread %@", [NSThread currentThread]);
                 if (data) {
                     NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:(NSJSONReadingMutableLeaves) error:nil];
                     success(dict);
@@ -45,7 +45,7 @@
         [sessionDataTask resume];
         
 //        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
-        NSLog(@"wait  currentThread %@", [NSThread currentThread]);
+//        NSLog(@"wait  currentThread %@", [NSThread currentThread]);
         
     } else {
         NSString *reason = [NSString stringWithFormat:@"get URL 是空。 URLStr = %@", urlstr];
