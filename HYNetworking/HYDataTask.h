@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
 
 @interface HYDataTask : NSObject
 
@@ -20,4 +22,10 @@
                   success:(void (^)(id json))success
                   failure:(void (^)(NSError *error))failure;
 
+
++ (void)postWithURLString:(NSString *)urlstr
+                   params:(NSDictionary *)params
+                   images:(NSArray <UIImage *>*)array
+                  success:(void (^)(id json))success
+                  failure:(void (^)(NSError *error))failure;
 @end
